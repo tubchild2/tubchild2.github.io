@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang = "en">
+	<head>
+		<meta charset = "UTF-8">
+		<title>DATAPACKS</title>
+		<link rel="stylesheet" href="../styles.css">
+	</head>
+	<body>
+        <div id="page">
+			<a href="../index.html">Back to Home</a>
+
+            <h1>Overview</h1>
+			<p>
+				It's much easier to make one than you think. The building blocks for most of the complicated things 
+				are already laid out, so you can hopefully focus in on the worldbuilding and neat gameplay ideas.
+			</p>
+			<p>
+				This website contains an optional balancing guide for difficulty. 
+				If you want to use it, select a difficulty for your datapack. 
+				Note the number of the difficulty, because that's what is used 
+				in the balancen'ing formulas. If you art using the balancing guide, 
+				difficulty is optional and merely adds flavor.
+			</p>
+
+			<br>
+			<p>
+				<strong>Difficulty</strong>
+				<ol>
+					<li>Story</li>
+					<li>Guided</li>
+					<li>Casual</li>
+					<li>Easy</li>
+					<li>Normal</li>
+					<li>Hard</li>
+					<li>Expert</li>
+					<li>Brutal</li>
+					<li>Nightmare</li>
+					<li>Hell</li>
+					<li>Abyss I</li>
+					<li>Abyss II</li>
+					<li>Abyss III</li>
+					<li>Abyss IV</li>
+					<li>Abyss V</li>
+					<li>Abyss VI</li>
+					<li>Abyss VII</li>
+					<li>Abyss VIII</li>
+					<li>Abyss IX</li>
+					<li>Abyss X</li>
+				</ol>
+			</p>
+			
+
+
+			<br><br><h1>Formatting a TTE Datapack</h1>
+			<p>
+				Keep formatting readable and brief. As with everything else having to do with TTE, creativity is 
+				encouraged. So, you can do what you want with the formatting. Here's the standard format:
+			</p>
+			<ul>
+				<li>Introduction
+					<ul>
+						<li>Name</li>
+						<li>Description</li>
+						<li>Tone</li>
+						<li>Genre</li>
+						<li>Difficulty (Name and 1-20)</li>
+					</ul>
+				</li>
+				<li>Species</li>
+				<li>Backgrounds</li>
+				<li>Classes</li>
+				<li>Items</li>
+				<li>Features</li>
+				<li>Tags / Properties (If necessary)</li>
+				<li>Skills (If necessary)</li>
+				<li>Player Conditions (If necessary)</li>
+			</ul>
+
+
+			<br><br><h1>Species, Background, Class</h1>
+			<p>
+				Though they share the same core attributes, they do not serve the same functions. 
+				They have different roles both in the story, and in gameplay.
+			</p>
+			<ul>
+				<li><strong>Background:</strong> where you come from, what you were doing before the game began</li>
+				<li><strong>Species:</strong> what kind of creature you are</li>
+				<li><strong>Class:</strong> what you can do and your role as a player</li>
+			</ul>
+
+			<br><br>
+			<p>
+				These are the core attributes that origin elements share:
+			</p>
+			<ul>
+			<li>Name
+				<ul>
+					<li>What the origin element is known as in-universe</li>
+					<li>Keep it short</li>
+				</ul>
+			</li>
+			<li>Description (optional)</li>
+			<li>HP
+				<ul>
+					<li>Classes: ~3-5</li>
+					<li>Species: ~1-2</li>
+					<li>Background: ~0-1</li>
+				</ul>
+			</li>
+			<li>Stat Boost Options</li>
+				<ul>
+					<li>Stats you can choose to gain +1 in</li>
+					<li>EX: STR, DEX, CON</li>
+				</ul>
+			<li>Skill Boost Options</li>
+				<ul>
+					<li>Skills you can choose to gain +1 in</li>
+					<li>EX: Acrobatics, Endurance, History</li>
+				</ul>
+			<li>Speed
+				<ul>
+					<li>An amount of additional tiles you can move per round of combat</li>
+					<li>Typically reserved for species</li>
+					<li>Classes: ~0-1</li>
+					<li>Species: ~6</li>
+					<li>Background: ~0-1</li>
+				</ul>
+			</li>
+			<li>Features
+				<ul>
+					<li>Class features should focus on radically changing how this character does what they do, 
+						and they should scale with the player's level in that class. For example, if you're making 
+						an engineer class, give them a feature that lets them make "a number of sentries equal to 
+						their engineer level."</li>
+					<li>Species features should alter approaches to situations, but shouldn't solve every problem. 
+						For example, if you grant a species the ability to fly, install guardrails to prevent it 
+						from being overused or from easily outperforming everyone else.</li>
+					<li>Background features should be broadly applicable to anyone of any species or class. 
+						For example, grant a small boost to health, speed, or a basic utility ability.</li>
+				</ul>
+			</li>
+			</ul>
+
+			<br><br><h1>Items</h1>
+			<p>
+				GMs have the most freedom with designing items. The following is a guide to the information needed 
+				to create a usable item in game.
+			</p>
+
+			<br><br>
+			<p>Name</p>
+			<ul><li>What the item is known as in-universe</li></ul>
+
+			<br><br>
+			<p>Description (optional)</p>
+			<ul><li>A description of the appearance, lore, or additional functions of the item.</li></ul>
+
+			<br><br>
+			<p>Rarity (optional)</p>
+			<ul>
+				<li>Rarity is used by the TTE balancing formulas. If you aren't using them, this is optional.</li>
+				<ol>
+					<li><span style="color:black;">Awful</span></li>
+					<li><span style="color:gray;">Common</span></li>
+					<li><span style="color:white;">Uncommon</span></li>
+					<li><span style="color:rgb(73, 73, 255);">Rare</span></li>
+					<li><span style="color:green;">Very Rare</span></li>
+					<li><span style="color:rgb(197, 197, 0);">Epic</span></li>
+					<li><span style="color:orange;">Legendary</span></li>
+					<li><span style="color:rgb(255, 49, 49);">Mythical</span></li>
+					<li><span style="color:rgb(139, 0, 0);">Relic</span></li>
+					<li><span style="color:purple;">Eternal</span></li>
+				</ol>
+			</ul>
+
+			<br><br>
+			<p>Value</p>
+			<p>There are two approaches to assigning value to items in TTE: Standard, and Absolute. Absolute is more complicated 
+				but is very helpful if you plan on doing a lot of bartering, currency conversions, or otherwise complex 
+				currencies. Standard is recommended in general, but definitely for beginners.
+			</p>
+
+			<br>
+			<p><i>STANDARD VALUE</i></p>
+			<ul>
+				<li>Each item is assigned a value in a set common currency, such as gold or dollars.</li>
+				<li>One currency item is created that has a value of 1</li>
+				<li>Currency conversion is not likely, and currencies have no special properties beyond being valuable.</li>
+			</ul>
+
+			<br>
+			<p><i>ABSOLUTE VALUE</i></p>
+			<ul>
+				<li>Each item is assigned a value that represents the objective, absolute worth of the item.</li>
+				<li>Multiple currency items are created with their own absolute values</li>
+				<li>To find how much an item is worth in a currency, its absolute value is divided by the currency's 
+					absolute value.</li>
+				<li>This allows conversion between multiple currencies, fair trading/bartering, and sets a global 
+					standard for the economy</li>
+				<li>You can convert a standard economy into an absolute economy by assigning the standard currency an 
+					absolute value, and then converting each item's value into their absolute counterparts.</li>
+			</ul>
+
+			<br>
+			<p>Tags</p>
+			<p>Tags are boolean switches that determine what the item can be used for in game. Under the item, note 
+				any tags that it has. Here are the standard tags:
+				<ul>
+					<li>Is Armor: the item can be equipped as armor</li>
+					<li>Is Augment: the item can be equipped as an augment</li>
+					<li>Is Currency: the item is a commonly accepted currency beyond just being used in bartering</li>
+					<li>Is Consumed: the item is destroyed after being used</li>
+					<li>Is Weapon: the item can be used to deal damage as an action beyond being an improvised weapon</li>
+					<li>Is Tool: the item can perform a special, pre-defined function as an action</li>
+					<li>Is Skill: the item can be mastered. Players can gain skill levels in its use</li>
+				</ul>
+			</p>
+
+			<br><br>
+			<p>Damage Equation</p>
+			<p>Important if: Is Weapon</p>
+			<ul>
+				<li>An equation of dice, stats, and numbers that shows how much damage the weapon does on hit</li>
+				<li>EX: 1d6 + STR + 1</li>
+			</ul>
+
+
+			<br><br>
+			<p>Use Range</p>
+			<p>Important if: Is Weapon || Is Tool</p>
+			<ul>
+				<li>An integer representing how many tiles (5ft spaces) the object reaches</li>
+				<li>EX: 5</li>
+			</ul>
+
+
+			<br><br>
+			<p>Action Cost</p>
+			<p>Important if: Is Weapon || Is Tool || Is Consumed || Is Skill</p>
+			<ul>
+				<li>What type of action is expended to use this item while in combat?</li>
+				<li>Action, Bonus Action, Movement, Free Action</li>
+				<li>EX: Action</li>
+			</ul>
+
+			<br><br>
+			<p>Use Stats</p>
+			<p>Important if: Is Weapon || Is Tool || Is Consumed || Is Skill</p>
+			<ul>
+				<li>What core stats are added to skill checks made to use this item</li>
+				<li>EX: STR or DEX</li>
+			</ul>
+
+			<br><br>
+			<p>Imbued Condition (Optional)</p>
+			<p>Important if: Is Weapon || Is Tool || Is Consumed || Is Skill</p>
+			<ul>
+				<li>What condition(s) are applied to a target object if this item is used on them?</li>
+				<li>EX: "Poison"</li>
+			</ul>
+
+			<br><br>
+			<p>Defense Equation</p>
+			<p>Important if: Is Armor</p>
+			<ul>
+				<li>An equation of dice, stats, and numbers that shows how much defense the item grants when equipped</li>
+				<li>EX: 6 + DEX + DEX</li>
+			</ul>
+
+			<br><br>
+			<p>Slot Cost</p>
+			<p>Important if: Is Augment</p>
+			<ul>
+				<li>If this item is equipped as an augment, how many augment slots does it take up?</li>
+				<li>EX: 2</li>
+			</ul>
+
+			<br><br>
+			<p>Imbedded Features</p>
+			<p>Important if: Is Augment</p>
+			<ul>
+				<li>If this item is equipped as an augment, what features does the player receive?</li>
+				<li>EX: "Tough", "Sniper"</li>
+			</ul>
+
+
+			<br><br><h1>Custom Tags / Properties</h1>
+			<p>
+				Say you wanted to give multiple items the same shared functionality. 
+				That's where custom tags come in (also called properties). You can mark 
+				items with these tags, and define their functionality elsewhere.
+			</p>
+			<ul>
+				<li>Name: what is the tag known as?</li>
+				<li>Function: what does the tag do?</li>
+			</ul>
+
+
+			<br><br><h1>Features</h1>
+			<p>Name</p>
+			<ul>
+				<li>What is the feature known as?</li>
+			</ul>
+
+			<br><p>Description</p>
+			<ul>
+				<li>What abilities are granted by this feature?</li>
+				<li>What mechanics do players with this feature now have access to?</li>
+				<li>What are their rules?</li>
+				<li>What's the lore behind it? (OPTIONAL)</li>
+				<li>How does it work in-universe? (OPTIONAL)</li>
+			</ul>
+
+			<br><p>Player Accessible</p>
+			<ul>
+				<li>(yes/no)</li>
+				<li>When players level up, can they choose to gain this feature?</li>
+				<li>If not, make sure that the feature can be obtained via an augment, or something else.</li>
+			</ul>
+
+			<br><p>Requirements to Acquire (OPTIONAL)</p>
+			<ul>
+				<li>Do you need to be of a certain level in a core stat?</li>
+				<li>Do you need to be of a certain level in a skill?</li>
+				<li>Do you need to be of a certain speed, HP, or level?</li>
+				<li>Do you need a certain amount of an item?</li>
+				<li>EX: Requires STR lvl 5, Piano lvl 5, Bowling Ball x5</li>
+			</ul>
+
+			<br><br><h1>Custom Skills</h1>
+			<p>Only make custom skills if they'll come up frequently in your game, they are easily differentiated 
+				from the other skills, and they apply to something specific and aren't broad catch-all things.</p>
+			
+			<br><p>Name</p>
+			<ul>
+				<li>What is the name of this skill?</li>
+			</ul>
+
+			<br><p>Description</p>
+			<ul>
+				<li>Make sure to include what it does in the name as to not confuse people.</li>
+				<li>Think about what triggers the use of this skill in a check.</li>
+			</ul>
+
+			<br><p>Use Stats</p>
+			<ul>
+				<li>When a check is made using this skill, in addition to the player's level in this skill, 
+					what core stat is added to the roll?</li>
+				<li>What core stat is closest to this skill?</li>
+				<li>EX: STR</li>
+			</ul>
+
+			<br><br><h1>Player Conditions</h1>
+			<p>Player conditions are temporary states players enter that affect gameplay. They add flavor, 
+				but too many can be hard to track.</p>
+
+			<br><p>Name</p>
+			<ul>
+				<li>What is the condition known as in-universe?</li>
+			</ul>
+
+			<br><p>Function</p>
+			<ul>
+				<li>What effect does this condition have on players afflicted with it?</li>
+			</ul>
+
+			<br><p>Trigger</p>
+			<ul>
+				<li>Generally what triggers this condition?</li>
+				<li>Example: If the condition is "drunk", a trigger could be drinking alcohol.</li>
+			</ul>
+        </div>
+	</body>
+</html>
