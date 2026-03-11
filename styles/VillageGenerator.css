@@ -1,0 +1,19 @@
+#page{
+    padding:30px;
+    border-radius: 5px;
+    width: fit-content;
+    box-shadow: 15px;
+    background-color: rgb(14, 57, 82);
+    border-style:inset;
+    border-width: 10px;
+}
+
+body{
+    color: white;
+    font-family:monospace;
+    background-image:url(../media/DungeonWall.jpg);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16pt;
+}

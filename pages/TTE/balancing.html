@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang = "en">
+	<head>
+		<meta charset = "UTF-8">
+		<title>Balancing</title>
+		<link rel="stylesheet" href="../../styles/TTEpage.css">
+		<link rel="icon" type="image/png" href="../../media/TTEfavicon.png">
+	</head>
+	<body>
+        <div id="page">
+			<a href="../../index.html">Back to Home</a>
+            <h1>BALANCING</h1>
+
+			<label for="difficulty">Campaign Difficulty (1-20)</label>
+			<input type="number" min="1" max="20" id="difficulty">
+			<p id="diff-display"></p>
+			
+			<label for="level">Player Level (1-20)</label>
+			<input type="number" min="1" max="20" id="level"> 
+			<p></p>
+
+			<label for="players">Player Count (1-10)</label>
+			<input type="number" min="1" max="10" id="players">
+			<p></p>
+
+			<br><br>
+			<div id="balance"></div>
+
+        </div>
+	</body>
+</html>
+<script src="../../scripts/balancing.js"></script>
