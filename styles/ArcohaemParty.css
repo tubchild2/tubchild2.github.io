@@ -91,3 +91,7 @@ td{
     border-color: white;
     background-color: rgb(15, 29, 66);
 }
+
+img {
+    max-width: 100%;
+}
