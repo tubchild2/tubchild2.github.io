@@ -38,7 +38,7 @@ const name_prefixes = [
     "Maybe",
     "Discount",
     "Judge"
-]
+];
 const all_syllables = [
   "ing","er","a","ly","ed","i","es","re","tion","in","e","con","y","ter","ex","al",
   "de","com","o","di","en","an","ty","ry","u","ti","ri","be","per","to","pro","ac",

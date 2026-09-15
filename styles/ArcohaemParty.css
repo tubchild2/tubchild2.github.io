@@ -92,6 +92,16 @@ td{
     background-color: rgb(15, 29, 66);
 }
 
+button {
+    width: 140px;
+    height: 70px;
+    border-radius: 5px;
+}
+
 img {
     max-width: 100%;
+}
+
+#hidden {
+    display: none;
 }
