@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang = "en">
+	<head>
+		<meta charset = "UTF-8">
+		<title>Village Generator</title>
+		<link rel="stylesheet" href="../../styles/VillageGenerator.css">
+        <link rel="icon" type="image/png" href="../../media/Styling/Arcohaem Favicon.png">
+	</head>
+	<body>
+        <div id="page">
+            <a href = "../Arcohaem-landing.html">Back to Arcohaem Landing</a>
+            <h1>Arcohaem Village Generator</h1>
+            <p>Randomized features and economies coming soon! Had to take a break to focus on writing the actual campaign, though this tool will still be helpful for worldbuilding in the future.</p>
+
+            <!--
+            <br><br>
+            <div>
+                <b id="name"></b>
+                <p id="location"></p>
+                <div id="traits"></div>
+            </div>
+            -->
+
+            <label for="sim_rate">Simulation Rate</label>
+            <input type="number" value="50" max="100" min="2" id="sim_rate">
+
+            <input type="checkbox" id="funmode" class="funmode" id="funmode">
+
+            <br><br>
+            <button type="button" id="create_btn">Generate</button>
+            
+            <br><br>
+            <div style="display:flex;">
+                <div class="box">
+                    <p class="centered"><b>INFO</b></p>
+                    <table>
+                        <tr>
+                            <td>Name</td>
+                            <td id="village_name">none</td>
+                        </tr>
+                        <tr>
+                            <td>Tribe</td>
+                            <td id="tribe">none</td>
+                        </tr>
+                        <tr>
+                            <td>Founded</td>
+                            <td id="founded">0000</td>
+                        </tr>
+                        <tr>
+                            <td>Year</td>
+                            <td id="year">0000</td>
+                        </tr>
+                        <tr>
+                            <td>Age</td>
+                            <td id="age">0000</td>
+                        </tr>
+                        <tr>
+                            <td>Happiness</td>
+                            <td id="happiness">0000</td>
+                        </tr>
+                        <tr>
+                            <td>Wealth</td>
+                            <td id="wealth">0000</td>
+                        </tr>
+                        <tr>
+                            <td>Population</td>
+                            <td id="population">0000</td>
+                        </tr>
+                        <tr>
+                            <td>Crime</td>
+                            <td id="crime">0000</td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div class="box">
+                    <p class="centered"><b>FEATURES</b></p>
+                    <ul id="features">
+                    </ul>
+                </div>
+            </div>
+            
+            <br><br>
+            <div class="history_box">
+                <p class="centered"><b>HISTORY</b></p>
+                <p id="history"></p>
+            </div>
+        </div>
+	</body>
+</html>
+<script src="../../scripts/villages2.js"></script>
