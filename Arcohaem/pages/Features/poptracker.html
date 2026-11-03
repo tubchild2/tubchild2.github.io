@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang = "en">
+	<head>
+		<meta charset = "UTF-8">
+		<title>Population Generator Experiment</title>
+		<link rel="stylesheet" href="../../styles/VillageGenerator.css">
+        <link rel="icon" type="image/png" href="../../media/Styling/Arcohaem Favicon.png">
+	</head>
+	<body>
+        <div id="page">
+            <a href = "../Arcohaem-landing.html">Back to Arcohaem Landing</a>
+            <h1>Population Simulator</h1>
+            <p>
+                I am but one step closer to automating the tedium of meticulous worldbuilding. 
+                Once I combine the functionality of this with the village generator, I can create detailed simulations of entire cities. 
+            </p>
+            <p>
+                In the future, I'd like to add more elements of culture, socialization, and individuality. 
+                I want to know who these people are and why they do what they do. 
+                I want to know what they do for work, who their friends are, and who they dislike. 
+                I want to know how much money they have, what their social class is, if they have any disabilities. 
+                I want to know their medical conditions. There's so much I could add to this.
+                I want to know how they'd behave if I implemented taboos (especially against incest cause whoo boy they do it a whole lot).
+                I want to know how good of parents they had / are. 
+            </p>
+
+            <!--SETTINGS AND STATS-->
+            <div style="display:flex;">
+                <div class="box">
+                    <h3>SETTINGS</h3>
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td><label for="view_deceased">Deceased View</label></td>
+                                <td><input type="checkbox" id="view_deceased"></td>
+                            </tr>
+                            <tr>
+                                <td><label for="first_year">Starting Year</label></td>
+                                <td><input type="number" id="first_year" style="width:50px;"></td>
+                            </tr>
+                            <tr>
+                                <td><label for="last_year">Final Year</label></td>
+                                <td><input type="number" id="last_year" style="width:50px;"></td>
+                            </tr>
+                            <tr>
+                                <td><label for="sim_rate">Simulation Rate</label></td>
+                                <td><input type="number" id="sim_rate" style="width:50px;"></td>
+                            </tr>
+                            <tr>
+                                <td><label for="base_charisma">Base Charisma</label></td>
+                                <td><input type="number" id="base_charisma" style="width:50px;"></td>
+                            </tr>
+                            <tr>
+                                <td><label for="charisma_deviance">Charisma Deviance</label></td>
+                                <td><input type="number" id="charisma_deviance" style="width:50px;"></td>
+                            </tr>
+                            <tr>
+                                <td><label for="new_affection">New Relationship Affection</label></td>
+                                <td><input type="number" id="new_affection" style="width:50px;"></td>
+                            </tr>
+                            <tr>
+                                <td><label for="saved_affection">Recovered Relationship Affection</label></td>
+                                <td><input type="number" id="saved_affection" style="width:50px;"></td>
+                            </tr>
+                            <tr>
+                                <td><label for="reproduction_point">Affection Reproduction Point</label></td>
+                                <td><input type="number" id="reproduction_point" style="width:50px;"></td>
+                            </tr>
+                            <tr>
+                                <td><label for="starting_pop">Starting Population</label></td>
+                                <td><input type="number" id="starting_pop" style="width:50px;"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <br><br><br>
+                    <button id="simulate" style="width:100px; height:50px;">Run</button>
+                </div>
+                <div class="box">
+                    <h3>STATS</h3>
+                    <p id="year_text"></p>
+                    <p id="population_count"></p>
+                    <p id="deceased_count"></p>
+                    <p id="total_lives"></p>
+                </div>
+            </div>
+            <br><br>
+
+            <!--POPULATION AND INSPECTOR-->
+            <div style="display:flex;">
+                <div class="box">
+                    <h3 id="pop_list_header">Population List</h3>
+                    <input type="text" id="search">
+                    <div id="pop_list"></div>
+                </div>
+                <div class="box">
+                    <h3>Inspector</h3>
+                    <div id="pop_inspect"></div>
+                </div>
+                
+            </div>
+
+        </div>
+	</body>
+</html>
+<script src="../../scripts/poptracker.js"></script>

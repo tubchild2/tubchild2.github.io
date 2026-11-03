@@ -18,8 +18,11 @@
     padding-left: 15px;
     padding-right: 15px;
     padding-bottom: 15px;
-    width:280px;
-    height:350px;
+
+    width:580px;
+
+    min-height:350px;
+    height: fit-content;
 }
 
 .history_box {
@@ -47,7 +50,8 @@
 }
 
 table {
-    border-spacing: 10px 0px;
+    border-spacing: 20px 0px;
+    border: 2px white;
 }
 
 body{
