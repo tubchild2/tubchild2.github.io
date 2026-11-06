@@ -1,0 +1,139 @@
+/*
+    Global Settings
+*/
+body{
+    color: var(--primary-text-color);
+    font-family:monospace;
+    background-image:url(../media/Styling/DungeonWall.jpg);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size: var(--large-font);
+}
+a {
+    color:var(--link-text-color);
+}
+canvas {
+    border-style:solid;
+    border-width: 4px;
+    background-color: var(--water-color);
+    border-radius: 5px;
+    border-color: var(--border-color);
+
+    width: 100%;
+}
+table {
+    border-spacing: 5px 0px;
+    width: 100%;
+
+    border-style: solid;
+    border-color: var(--border-color);
+    border-width: 4px;
+
+    background-color: var(--row-color);
+}
+tr {
+    background-color: var(--row-color);
+    width: 100%;
+}
+input {
+    width: 3vw;
+}
+button {
+    width: 3vw;
+    height: 10%;
+    font-size:var(--medium-font);
+}
+h1 {
+    font-size: var(--very-large-font);
+}
+h3 {
+    font-size: var(--large-font);
+    padding-top:1vw;
+}
+
+
+
+/*
+    Variables
+*/
+:root {
+    --very-large-font: 2vw;
+    --large-font: 1vw;
+    --medium-font: 0.75vw;
+    --small-font: 0.5vw;
+
+    --background-color: #0e3952;
+    --border-color: #dbe1fd;
+
+    --primary-text-color: white;
+    --link-text-color: #9effff;
+    --output-text-color: #ff0000;
+
+    --row-color: rgb(1, 0, 60);
+    --label-column-color: rgb(1, 0, 90);
+    --inout-column-color: rgb(1, 0, 60);
+
+    --water-color: #24286b;
+}
+
+
+
+/*
+    IDs
+*/
+#page{
+    border-style:solid;
+    border-width: 4px;
+    border-radius: 5px;
+    border-color: var(--border-color);
+
+    background-color: var(--background-color);
+    box-shadow: 15px;
+
+    width: 80%;
+    height:fit-content;
+
+    padding:30px;
+}
+
+
+
+/*
+    Classes
+*/
+.column_label {
+    width: 20%;
+    font-size:var(--medium-font);
+    background-color: var(--label-column-color);
+}
+.column_input {
+    width: 30%;
+    background-color: var(--inout-column-color);
+
+    padding-left: 0.2vw;
+    padding-right: 0.2vw;
+    padding-top: 0.2vh;
+    padding-bottom: 0.2vh;
+}
+.column_output {
+    width: 25%;
+    font-size:var(--medium-font);
+    color: var(--output-text-color);
+    background-color: var(--inout-column-color);
+
+    padding-left: 0.2vw;
+    padding-right: 0.2vw;
+    padding-top: 0.2vh;
+    padding-bottom: 0.2vh;
+}
+.box {
+    border-style:solid;
+    border-width: 4px;
+    border-color:var(--border-color);
+    border-radius: 5px;
+
+    padding: 15px;
+    width: 25%;
+    height: 100%;
+}

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang = "en">
+	<head>
+		<meta charset = "UTF-8">
+		<title>Map Generation Experiment</title>
+		<link rel="stylesheet" href="../../styles/mapGen.css">
+        <link rel="icon" type="image/png" href="../../media/Styling/Arcohaem Favicon.png">
+	</head>
+	<body>
+        <div id="page">
+            <div>
+                <a href = "../Arcohaem-landing.html">Back to Arcohaem Landing</a>
+            </div>
+            <div>
+                <div id="mouse-pos"></div>
+                <div id="transformed-mouse-pos"></div>
+                
+            </div>
+            <div id="main_page">
+                <div id="div_header">
+                    <h1>Map Generation Experiment</h1>
+                    <p>
+                        For generating randomized maps. 
+                    </p>
+                </div>
+
+                <div id="div_content" style="display:flex;">
+                    <div id="div_settings" class="box">
+                        <div id="div_settings">
+                            <h3>Settings</h3>
+                            <table>
+                                <tr>
+                                    <td class="column_label">Height</td>
+                                    <td class="column_input"><input type=number id="input_height"></td>
+
+                                    <td class="column_label">Scale</td>
+                                    <td class="column_input"><input type=number id="input_scale"></td>
+                                </tr>
+                                <tr>
+                                    <td class="column_label">Width</td>
+                                    <td class="column_input"><input type=number id="input_width"></td>
+
+                                    <td class="column_label">Density</td>
+                                    <td class="column_input"><input type=number id="input_density"></td>
+                                </tr>
+                                <tr>
+                                    <td class="column_label">Water</td>
+                                    <td class="column_input"><input type=number id="input_water_level"></td>
+                                </tr>
+                                <tr>
+                                    <td class="column_label">Sand</td>
+                                    <td class="column_input"><input type=number id="input_sand_level"></td>
+                                </tr>
+                                <tr>
+                                    <td class="column_label">Land</td>
+                                    <td class="column_input"><input type=number id="input_land_level"></td>
+                                </tr>
+                                <tr>
+                                    <td class="column_label">Mountain</td>
+                                    <td class="column_input"><input type=number id="input_mountain_level"></td>
+                                </tr>
+                                <tr>
+                                    <td class="column_label">Snow</td>
+                                    <td class="column_input"><input type=number id="input_snow_level"></td>
+                                </tr>
+                            </table>
+                        </div>
+
+                        <div id="div_controls">
+                            <h3>Controls</h3>
+                            <button id="button_start">Start</button>
+                            <button id="button_reset">Reset</button>
+                            <button id="button_center">Center</button>
+                        </div>
+
+                        <div>
+                            <h3>Stats</h3>
+                            <table>
+                                <tr>
+                                    <td class="column_label">X</td>
+                                    <td class="column_output" id="output_x">val</td>
+
+                                    <td class="column_label">Y</td>
+                                    <td class="column_output" id="output_y">val</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <div id="div_canvas">
+                        <canvas id="canvas_map" width="1920" height="1080"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+	</body>
+</html>
+<script src="../../scripts/mapGen.js"></script>
