@@ -149,9 +149,8 @@ function get_inputs(){
 
 // GENERATION
 function test_map(){
-    perlin.seed();
     map = [];
-
+    perlin.seed();
     for (let x = 0; x < map_width; x++){
         let column = [];
         for (let y = 0; y < map_height; y++){
@@ -159,15 +158,27 @@ function test_map(){
             
             let cx = map_width / 2;
             let cy = map_height / 2;
-            let dx = x - cx;
-            let dy = y - cy;
-            let d = Math.sqrt(dx ** 2 + dy ** 2)
-            v -= d / map_width;
+            v -= dist(x, y, cx, cy) / map_width;
 
             column.push(Math.round(v * 250));
         }
         map.push(column);
     }
+
+    let m = 20; // octave multiplier
+    let vis = 0.05; // visibility
+    for (let x = 0; x < map_width; x++){
+        for (let y = 0; y < map_height; y++){
+            let v = perlin.get(x * (map_scale * m / 1000), y * (map_scale * m / 1000));
+
+            let cx = map_width / 2;
+            let cy = map_height / 2;
+            v -= dist(x, y, cx, cy) / map_width;
+
+            map[x][y] += Math.round(v*vis*250);
+        }
+    }
+
 }
 
 
@@ -218,7 +229,6 @@ function draw_map(context){
             ctx.fillRect(x * map_density, y * map_density, map_density, map_density);
         }
     }
-
 }
 function prep_UI(){
     // DRAGGING
@@ -350,4 +360,10 @@ let perlin = {
 }
 function clamp(num, min, max){
     return Math.min(Math.max(num, min), max);
+}
+function dist(x1, y1, x2, y2){
+    let dx = x1 - x2;
+    let dy = y1 - y2;
+    let d = Math.sqrt(dx ** 2 + dy ** 2)
+    return d;
 }
