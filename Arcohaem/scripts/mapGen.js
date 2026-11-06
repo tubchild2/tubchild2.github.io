@@ -200,7 +200,7 @@ function draw_map(context){
             //ctx.fillStyle = `rgb(${v}, ${v}, ${v})`;
 
             if (v < water_level){
-                ctx.fillStyle = water_color;
+                continue;
             }
             else if (v < sand_level) {
                 ctx.fillStyle = sand_color;
