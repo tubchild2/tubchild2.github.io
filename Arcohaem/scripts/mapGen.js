@@ -19,7 +19,7 @@ let max_zoom_def = [1, 15, 20];
 let drag_speed_def = [0.5, 2, 5];
 let pan_speed_def = [6, 15, 30];
 let layers_def = [1, 30, 100];
-let layer_visibility_def = [1, 15, 100];
+let layer_visibility_def = [1, 50, 100];
 
 const pan_rate = 2;
 
@@ -249,7 +249,7 @@ function draw_map(context){
     for (let x = 0; x < map_width; x++){
         for (let y = 0; y< map_height; y++){
             const v = map[x][y];
-            const v_dif = Math.round(v / layers) * layer_visibility;
+            const v_dif = Math.round(v / layers) * (layer_visibility * layers * 0.01);
             let cell_color = 'white';
 
             if (v < water_level){
